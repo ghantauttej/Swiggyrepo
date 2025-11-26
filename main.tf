@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_instance" "one" {
- count                  = 3
+ count                  = 1
  ami                    = "ami-0ecb62995f68bb549"
   instance_type          = "t3.micro"
   tags = {
@@ -12,6 +12,7 @@ resource "aws_instance" "one" {
     ENV = "Prod"
   }
 }
+
 
 
 
