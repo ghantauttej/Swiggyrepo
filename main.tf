@@ -9,8 +9,10 @@ resource "aws_instance" "one" {
   instance_type          = "t3.micro"
   tags = {
     Name = " uttej-Prod-instance"
+    ENV = "Prod"
   }
 }
+
 
 
 
