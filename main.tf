@@ -15,7 +15,7 @@ resource "aws_db_instance" "swiggy-db" {
   username                    = "admin"
   password                    = "Devopsbyraham007*"
   parameter_group_name        = "default.mysql8.0"
-  multi_az                    = true
+  
   skip_final_snapshot         = true
   publicly_accessible          = false
 
@@ -24,6 +24,7 @@ resource "aws_db_instance" "swiggy-db" {
     ignore_changes  = all
   }
 }
+
 
 
 
